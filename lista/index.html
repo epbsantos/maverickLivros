@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Livros UTFPR Toledo</title>
+    <meta name="description" content="Livros de computação da biblioteca da UTFPR de Toledo" />
+    <meta name="keywords" content="BookBlock, book preview, look inside, css, transforms, animations, css3, 3d, perspective, fullscreen" />
+    <meta name="author" content="Eduardo Pezutti" />
+    
+    <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    
+    <style>
+      label {
+          width: 130px;
+          float: left;
+          text-align: right;
+          padding-right: 5px;
+      }
+      
+              .button {
+  font: bold 11px Arial;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 12px 16px 12px 16px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+    </style>
+  </head>
+  <body>
+
+    <div id="scroll-wrap" class="container">
+      <header class="codrops-header">
+          <h1>Livros de Computação<span>UTFPR - Toledo</span></h1>
+          
+          <a class="button" href="compras.csv">Baixar lista com os pedidos</a>
+      </header>
+      
+      <div class="main">
+        <h1>Lista de Compra -- Adicionar</h1>
+        
+        <form action="add.php" method="POST">
+          <div>
+            <label>Nome do livro</label>
+            <input type="text" name="lnome" value=" " />
+          </div>
+          <div>
+            <label>Autores</label>
+            <input type="text" name="lautor" value=" " />
+          </div>
+          <div>
+            <label>Editora</label>
+            <input type="text" name="leditora" value=" "/>
+          </div>
+          <div>
+            <label>Ano</label>
+            <input type="text" name="lano" value=" "/>
+          </div>
+          <div>
+            <label>Edição / Volume</label>
+            <input type="text" name="ledicao" value=" "/>
+          </div>
+          <div>
+            <label>ISBN</label>
+            <input type="text" name="lisbn" value=" "/>
+          </div>
+          <hr>
+          <div>
+            <label>Quantidade</label>
+            <input type="number" name="lnum" value="1"/>
+          </div>
+          <div>
+            <label>Link</label>
+            <input type="text" name="llink" value=" "/>
+          </div>
+          <div>
+            <label>Valor</label>
+            <input type="text" name="lvalor" value=" "/>
+          </div>
+          
+          <hr>
+          
+          <div>
+            <label>Disciplina</label>
+            <input type="text" name="disciplina" value=" "/>
+          </div>
+          
+          <div>
+            <label>Tipo</label><br>
+            <label><input type="radio" name="tipo" value="básica"/>Básica</label><br>
+            <label><input type="radio" name="tipo" value="complementar"/>Complementar</label>
+          </div>
+          
+          <br><br>
+          
+          <hr>
+          
+          <div>
+            <label>Solicitante (Nome)</label>
+            <input type="text" name="solicitante" value=" "/>
+          </div>
+          
+          <div>
+            <input type="submit" value="Enviar" />
+          </div>
+          
+          
+        </form>
+
+      </div>
+    </div>
+  </body>
+</html>

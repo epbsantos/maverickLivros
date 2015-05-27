@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Sacramento|Abril+Fatface|Six+Caps|Cardo:400italic,700);
+@font-face {
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+body {
+	font-family: 'Lato', Arial, sans-serif;
+	color: #64696a;
+	background: #fff;
+}
+
+a {
+	color: #ddd;
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
+}
+
+.codrops-header {
+	position: relative;
+	margin: 0 auto;
+	padding: 3em 1em;
+	color: #fff;
+	text-align: center;
+	background: url(../img/bgheader.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+.codrops-header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;
+}
+
+.codrops-header h1 span {
+	display: block;
+	font-size: 60%;
+	opacity: 0.7;
+	padding: 0 0 0.6em 0.1em;
+}
+
+.codrops-header #search {
+  font-size: 1.5em;
+  border-radius: 8px;
+  border: 0px;
+  padding: 4px;
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 167px;
+  margin-left: -200px;
+  width: 400px;
+}
+
+.clearable{
+  background: #fff url(http://i.imgur.com/z7ZSYjt.png) no-repeat right -10px center;
+  transition: background 0.4s; /*Remove this line if issues in Chrome (02.2014)*/
+}
+/* (jQ addClass:) if input has value: */
+.clearable.x{
+  background-position: right 10px center;
+}
+/* (jQ addClass:) if mouse is over the 'x' input area*/
+.clearable.onX{
+  cursor:pointer;
+  padding: 4px;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	left: 0;
+	text-transform: uppercase;
+	font-size: 0.69em;
+	line-height: 2.2;
+	text-align: justify;
+}
+
+.codrops-top a {
+	color: #f0f0f0;
+	text-decoration: none;
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	display: inline-block;
+}
+
+.codrops-top a:hover {
+	color: #fff;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+.related {
+	margin-top: 5em;
+	color: #fff;
+	background: #333;
+	text-align: center;
+	font-size: 1.25em;
+	padding: 3em 0;
+	overflow: hidden;
+}
+
+.related a {
+	display: inline-block;
+	text-align: left;
+	margin: 20px auto;
+	padding: 10px 20px;
+	opacity: 0.8;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-backface-visibility: hidden;
+}
+
+.related a:hover,
+.related a:active {
+	opacity: 1;
+}
+
+.related a img {
+	max-width: 100%;
+}
+
+.related a h3 {
+	font-weight: 300;
+	margin-top: 0.15em;
+	color: #fff;
+}
+
+@media screen and (max-width: 40em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+	.codrops-icon:before {
+		font-size: 160%;
+		line-height: 2;
+	}
+
+}
+
+
+.tsi31, .tsi32, .tsi33, .tsi34, .tsi35, .tsi36 {
+    font-size: 0.65em;
+    padding: 3px 4px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-right: 4px;
+}
+
+.ref_basc .tsi31 {
+    background-color: #93c47d;
+}
+
+.ref_basc .tsi32 {
+    background-color: #76a5af;
+}
+
+.ref_basc .tsi33 {
+    background-color: #6d9eeb;
+}
+
+.ref_basc .tsi34 {
+    background-color: #ffd966;
+}
+
+.ref_basc .tsi35 {
+    background-color: #8e7cc3;
+}
+
+.ref_basc .tsi36 {
+    background-color: #c27ba0;
+}
+
+
+.ref_comp .tsi31 {
+    background-color: rgba(147,196,125, 0.6);
+}
+
+.ref_comp .tsi32 {
+    background-color: rgba(118,165,175, 0.6);
+}
+
+.ref_comp .tsi33 {
+    background-color: rgba(109,158,235, 0.6);
+}
+
+.ref_comp .tsi34 {
+    background-color: rgba(255,217,102, 0.6);
+}
+
+.ref_comp .tsi35 {
+    background-color: rgba(142,124,195, 0.6);
+}
+
+.ref_comp .tsi36 {
+    background-color: rgba(194,123,160, 0.6);
+}
